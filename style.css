@@ -1,0 +1,614 @@
+:root {
+    --primary-color: #001845;
+    --secondary-color: #0466C8;
+    --tertiary-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: "Source Serif 4", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+h2,p,h3{
+    text-align: center;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* * Menu Design */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+li,a{ 
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+a{
+    letter-spacing: 6px;
+    margin-right:10px;
+    margin-left: 10px;      
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items > .logo > img{
+    height: 40px;
+    padding: 5px;
+}
+
+
+.menu{
+    background-color: #001845;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.menu-items{
+    width: 1200px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty{
+    flex:3;
+}
+
+
+nav > ul {
+   display: flex;
+  
+}
+
+nav, li{
+    margin: auto;
+}
+
+/* * Hero Section Design */
+
+#hero{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.selfie{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px 15px;
+}
+
+.img-holder{
+    width: 230px;
+    height: 230px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto auto;
+    
+   
+}
+
+.hero-items{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero-text > h1{
+  text-align: center;
+}
+
+
+
+
+/* * Resume Section Design */
+#resume{
+    padding: 50px 0;
+}
+.resume-text{
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: justify;
+
+}
+
+.resume-para{
+    text-align: justify;
+
+}
+
+.resume-para::first-letter{
+    font-size: 5rem;
+   
+    color: #0466C8;
+    float: left;
+    padding-right: 15px;
+}
+/* * About Section Design */
+
+#about {
+   background-color: #0466C8;
+   padding: 50px 25px;
+}
+
+#about .about-text {    
+   max-width: 1200px;
+   text-align: center;
+   margin: 0px auto;
+}
+
+
+/* * Project Section Design */
+
+
+
+#projects{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+
+
+.project-collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+   
+
+}
+
+.proj-img{
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+
+
+
+
+
+/* * Contact Section Design */
+
+#contact{
+    background-color: #0466C8;
+}
+
+.contact-text{
+    max-width: 1200px;
+    padding: 50px 25px;
+    margin: 0 auto;
+    color: white;
+}
+
+
+/* * Footer Section Design */
+
+
+.footer-text {    
+   max-width: 1200px;
+   padding: 50px 50px;
+   margin: 0px auto;
+}
+
+footer{
+    padding-bottom: 30px;
+}
+
+@media (max-width:576px){
+   
+    .child-width{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        justify-content: center;
+        padding: 0px 20px;
+  
+    }
+
+
+    .menu-items{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 20px;
+    }
+
+  
+    
+    .menu-items > .logo > img{
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+    }
+
+    .logo{
+        padding-top: 20px;
+        margin: auto;
+    }
+
+    nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .except{
+        font-size: 30px;
+    }
+
+    /* Hero section */
+
+    .hero-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-items > .hero-text > h1{
+        text-align: center;
+       
+        margin: auto;
+        
+    }
+
+    /* Resume Section */
+
+    
+
+    /* about section */
+    #about > .about-text > h2{
+        text-align: center;
+    }
+
+    /* project section */
+
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .project-collection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .proj-img{
+        width: 60vw;
+    }
+
+    .projects-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+    /* contact section */
+
+   #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+  
+
+   /* footer section */
+
+   footer > .footer-text > p{
+        font-size: 1rem;
+   }
+   
+   
+  
+
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+   
+    .child-width{
+        max-width: 80vw;
+        padding: 0px 20px;
+    }
+
+    .menu-items > .logo > img{
+        height: 200px;
+        width: 150px;
+        padding-top: 10px;
+    }
+    
+
+    .menu-items{
+       display: flex;
+       flex-direction: column;
+
+    }
+
+    nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .except{
+      font-size: 70px;
+    }
+    .logo{
+        padding-top: 20px;
+   
+    }
+
+
+    /* Hero section */
+
+    .hero-items{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .selfie{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 15px 15px;
+    }
+    
+    .img-holder{
+        width: 330px;
+        height: 330px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin: auto auto;
+        
+       
+    }
+    
+
+    .hero-items > .hero-text > h1{
+        text-align: center;
+        max-width: 80vw;
+       
+    }
+
+    /* Resume Section */
+
+    #resume h1{
+        color: #0466C8;
+        text-align: center;
+    }
+
+    
+    
+    .resume-para{
+        text-align: justify;
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    /* about section */
+
+    #about > .about-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about > .about-text > h2{
+        max-width: 80vw;
+    }
+
+
+    /* project section */
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    .proj-img {
+        width: 70vw;
+       
+    }
+
+    /* contact section */
+
+   #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+    #contact > .contact_div> .id-text{
+        max-width: 80vw;
+       
+        text-align: justify;
+        font-size: 35px;
+   }
+
+   
+   footer > .footer-text > p{
+    font-size: 30px;
+   }
+
+   /* about section */
+   
+  #about > .about-text > h2{
+    max-width: 80vw;
+  
+  }
+
+
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   
+    .child-width{
+        max-width: 80vw;
+       
+        padding: 0px 20px;
+    }
+
+
+    .menu-items{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .menu-items > .logo > img{
+        height: 150px;
+        width: 150px;
+        padding-top: 10px;
+    }
+
+    .logo{
+        padding-top: 20px;
+   
+    }
+
+    nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .except{
+        font-size: 60px;
+    }
+
+    /* Hero section */
+
+    .hero-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-items > .hero-text > h1{
+        text-align: center;
+        font-size: 5rem;
+      
+    }
+
+    .selfie{
+        width: 330px;
+        height: 330px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 15px 15px;
+    }
+    
+    .img-holder{
+        width: 360px;
+        height: 360px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin: auto auto;
+        
+       
+    }
+
+    /* Resume Section */
+
+    #resume h1{
+        color: #0466C8;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .resume-text{
+        
+        text-align: justify;
+    
+    }
+    
+    .resume-para{
+        text-align: justify;
+        font-size: 3rem;
+      
+    }
+
+    /* project section */
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* contact section */
+
+   
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   /* about section */
+   
+   #about{
+    display: flex;
+    justify-content: center;
+   }
+   #about > .about-text > h2{
+    max-width: 80vw;
+   }
+
+
+
+}
+
+
